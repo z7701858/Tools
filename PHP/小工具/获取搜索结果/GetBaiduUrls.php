@@ -6,7 +6,6 @@
 //$wd=$_GET['wd'];
 $wd='a';
 
-
 $url ="https://www.baidu.com/s?wd=$wd"; 
 echo getHttps($url);
 

@@ -1,0 +1,10 @@
+﻿修改的功能点：
+1.可以直接读取目标URL target.txt进行批量子域名扫描
+2.所有的子域名信息进行集中汇总成ips.txt和urls.txt
+
+2中常见使用方式，默认6个进程，200个线程，可以瞬间撑爆CPU，所以这里设置3个进程，每个进程30个线程，也是很多了
+
+单目标扫描
+python subDomainsBrute.py -p 3 -t 30 --full www.baidu.com
+批量目标扫描
+python subDomainsBrute.py -p 6 -t 30 --full target.txt
