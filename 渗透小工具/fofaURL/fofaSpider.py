@@ -31,7 +31,7 @@ def spider():
             doc.write(j+"\n")
         if i==int(stop_page):
             break
-        time.sleep(10)
+        time.sleep(10)  #默认休眠时间为10s
     doc.close()
     print("OK,Spider is End .")
 
